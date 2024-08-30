@@ -1,6 +1,6 @@
 import { getGreeting } from '../support/app.po';
 
-describe('spotify-search-e2e', () => {
+describe('dashboard-e2e', () => {
   beforeEach(() => cy.visit('/'));
 
   it('should display welcome message', () => {

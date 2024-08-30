@@ -7,10 +7,10 @@ export default defineConfig({
     ...nxE2EPreset(__filename, {
       cypressDir: 'src',
       webServerCommands: {
-        default: 'yarn nx run spotify-search:serve',
-        production: 'yarn nx run spotify-search:serve-static',
+        default: 'yarn nx run dashboard:serve',
+        production: 'yarn nx run dashboard:serve-static',
       },
-      ciWebServerCommand: 'yarn nx run spotify-search:serve-static',
+      ciWebServerCommand: 'yarn nx run dashboard:serve-static',
       ciBaseUrl: 'http://localhost:4200',
     }),
     baseUrl: 'http://localhost:4200',

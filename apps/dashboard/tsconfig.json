@@ -4,7 +4,24 @@
     "allowJs": false,
     "esModuleInterop": false,
     "allowSyntheticDefaultImports": true,
-    "strict": true
+    "strict": true,
+    "paths": {
+      "@api": [
+        "apps/dashboard/src/app/services/api/index.ts"
+      ],
+      "@layouts": [
+        "apps/dashboard/src/app/layouts/index.ts"
+      ],
+      "@pages": [
+        "apps/dashboard/src/app/pages/index.ts"
+      ],
+      "@routes": [
+        "apps/dashboard/src/app/routes/index.ts"
+      ],
+        "@assets/*": [
+        "apps/dashboard/src/assets/*"
+      ]
+    }
   },
   "files": [],
   "include": [],

@@ -6,9 +6,29 @@ import {
     IconButton,
     Toolbar,
 } from '@mui/material';
-import { Theme } from '@mui/material/styles';
+import { styled, Theme } from '@mui/material/styles';
+
+import { layoutQuery } from '@utils';
 
 import avatar2 from '@assets/images/avatar/avatar-2.webp';
+
+const StyledToolbar = styled(Toolbar)(({ theme }) => ({
+    backdropFilter: `blur(6px)`,
+    WebkitBackdropFilter: `blur(6px)`,
+    backgroundColor: `rgba(${theme.palette.background.default} / 0.8)`,
+    minHeight: 'auto',
+    height: '64px',
+    transition: theme.transitions.create(['height', 'background-color'], {
+        easing: theme.transitions.easing.easeInOut,
+        duration: theme.transitions.duration.shorter,
+    }),
+    [theme.breakpoints.up('sm')]: {
+        minHeight: 'auto',
+    },
+    [theme.breakpoints.up(layoutQuery)]: {
+        height: '72px',
+    },
+}));
 
 const Header = () => {
     return (
@@ -20,7 +40,7 @@ const Header = () => {
                 zIndex: 1100,
             }}
         >
-            <Toolbar disableGutters>
+            <StyledToolbar disableGutters>
                 <Container
                     maxWidth={false}
                     sx={{
@@ -36,12 +56,8 @@ const Header = () => {
                             flex: '1 1 auto',
                             justifyContent: 'center',
                         }}
-                    >
-                        {/*{slots?.centerArea}*/}
-                    </Box>
-
+                    />
                     <Box gap={1} display="flex" alignItems="center">
-                        {/*<NotificationsPopover data={_notifications} />*/}
                         <IconButton
                             sx={{
                                 p: '2px',
@@ -57,7 +73,7 @@ const Header = () => {
                         </IconButton>
                     </Box>
                 </Container>
-            </Toolbar>
+            </StyledToolbar>
         </AppBar>
     );
 };

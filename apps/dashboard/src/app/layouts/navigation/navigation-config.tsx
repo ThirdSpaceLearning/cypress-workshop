@@ -15,19 +15,19 @@ export const navData = [
         icon: icon('ic-analytics'),
     },
     {
-        title: 'User',
-        path: '/user',
+        title: 'Users',
+        path: '/users',
         icon: icon('ic-user'),
     },
+    // {
+    //     title: 'Products',
+    //     path: '/products',
+    //     icon: icon('ic-cart'),
+    // },
     {
-        title: 'Product',
-        path: '/products',
+        title: 'Recipes',
+        path: '/recipes',
         icon: icon('ic-cart'),
-    },
-    {
-        title: 'Blog',
-        path: '/blog',
-        icon: icon('ic-blog'),
     },
     {
         title: 'Sign in',

@@ -1,7 +1,13 @@
 import { Navigate, Outlet, useRoutes } from 'react-router-dom';
 
 import { DashboardLayout } from '@layouts';
-import { HomePage } from '@pages';
+import {
+    HomePage,
+    NotFound,
+    ProductsPage,
+    RecipesPage,
+    UsersPage,
+} from '@pages';
 
 const Router = () => {
     return useRoutes([
@@ -13,8 +19,9 @@ const Router = () => {
             ),
             children: [
                 { element: <HomePage />, index: true },
-                // { path: 'user', element: <UserPage /> },
+                { path: 'users', element: <UsersPage /> },
                 // { path: 'products', element: <ProductsPage /> },
+                { path: 'recipes', element: <RecipesPage /> },
                 // { path: 'blog', element: <BlogPage /> },
             ],
         },
@@ -26,10 +33,10 @@ const Router = () => {
         //         </AuthLayout>
         //     ),
         // },
-        // {
-        //     path: '404',
-        //     element: <Page404 />,
-        // },
+        {
+            path: '404',
+            element: <NotFound />,
+        },
         {
             path: '*',
             element: <Navigate to="/404" replace />,

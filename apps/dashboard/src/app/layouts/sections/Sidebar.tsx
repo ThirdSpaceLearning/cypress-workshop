@@ -5,6 +5,9 @@ import { alpha, Box, ListItem, ListItemButton, useTheme } from '@mui/material';
 import { navData } from '../navigation/navigation-config';
 
 import { RouterLink } from '@routes';
+import { layoutQuery } from '@utils';
+
+import logo from '@assets/full-logo.svg';
 
 const Sidebar = () => {
     const { pathname } = useLocation();
@@ -14,7 +17,7 @@ const Sidebar = () => {
     return (
         <Box
             sx={{
-                pt: 2.5,
+                py: 2.5,
                 px: 2.5,
                 top: 0,
                 left: 0,
@@ -25,15 +28,15 @@ const Sidebar = () => {
                 bgcolor: 'common.white',
                 zIndex: 1001,
                 width: '300px',
-                [theme.breakpoints.up('md')]: {
+                [theme.breakpoints.up(layoutQuery)]: {
                     display: 'flex',
                 },
             }}
         >
             <Box mt={4} mb={6} mx={2}>
-                TSL
+                <Box component="img" src={logo}></Box>
             </Box>
-            <Box display="flex">
+            <Box display="flex" flexGrow={1}>
                 <Box
                     component="nav"
                     display="flex"
@@ -45,6 +48,7 @@ const Sidebar = () => {
                         gap={0.5}
                         display="flex"
                         flexDirection="column"
+                        alignItems="space-between"
                     >
                         {navData.map((item) => {
                             const isActive = item.path === pathname;

@@ -1,37 +1,52 @@
 {
-  "compilerOptions": {
-    "jsx": "react-jsx",
-    "allowJs": false,
-    "esModuleInterop": false,
-    "allowSyntheticDefaultImports": true,
-    "strict": true,
-    "paths": {
-      "@api": [
-        "apps/dashboard/src/app/services/api/index.ts"
-      ],
-      "@layouts": [
-        "apps/dashboard/src/app/layouts/index.ts"
-      ],
-      "@pages": [
-        "apps/dashboard/src/app/pages/index.ts"
-      ],
-      "@routes": [
-        "apps/dashboard/src/app/routes/index.ts"
-      ],
-        "@assets/*": [
-        "apps/dashboard/src/assets/*"
-      ]
-    }
-  },
-  "files": [],
-  "include": [],
-  "references": [
-    {
-      "path": "./tsconfig.app.json"
+    "compilerOptions": {
+        "jsx": "react-jsx",
+        "allowJs": false,
+        "esModuleInterop": false,
+        "allowSyntheticDefaultImports": true,
+        "strict": true,
+        "paths": {
+            "@api": [
+                "apps/dashboard/src/app/services/api/index.ts"
+            ],
+            "@features": [
+                "apps/dashboard/src/app/features/index.ts"
+            ],
+            "@layouts": [
+                "apps/dashboard/src/app/layouts/index.ts"
+            ],
+            "@pages": [
+                "apps/dashboard/src/app/pages/index.ts"
+            ],
+            "@routes": [
+                "apps/dashboard/src/app/routes/index.ts"
+            ],
+            "@services": [
+                "apps/dashboard/src/app/services/index.ts"
+            ],
+            "@shared": [
+                "apps/dashboard/src/app/shared/index.ts"
+            ],
+            "@types": [
+                "apps/dashboard/src/app/types/index.ts"
+            ],
+            "@utils": [
+                "apps/dashboard/src/app/utils/index.ts"
+            ],
+            "@assets/*": [
+                "apps/dashboard/src/assets/*"
+            ]
+        }
     },
-    {
-      "path": "./tsconfig.spec.json"
-    }
-  ],
-  "extends": "../../tsconfig.base.json"
+    "files": [],
+    "include": [],
+    "references": [
+        {
+            "path": "./tsconfig.app.json"
+        },
+        {
+            "path": "./tsconfig.spec.json"
+        }
+    ],
+    "extends": "../../tsconfig.base.json"
 }

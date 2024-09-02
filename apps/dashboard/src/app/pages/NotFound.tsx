@@ -2,14 +2,14 @@ import { Typography } from '@mui/material';
 
 import DashboardContent from '../layouts/DashboardContent';
 
-const HomePage = () => {
+const NotFound = () => {
     return (
         <DashboardContent>
             <Typography variant="h4" sx={{ mb: { xs: 3, md: 5 } }}>
-                Hi, welcome back! 👋
+                NotFound
             </Typography>
         </DashboardContent>
     );
 };
 
-export default HomePage;
+export default NotFound;

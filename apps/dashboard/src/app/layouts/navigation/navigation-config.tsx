@@ -19,11 +19,6 @@ export const navData = [
         path: '/users',
         icon: icon('ic-user'),
     },
-    // {
-    //     title: 'Products',
-    //     path: '/products',
-    //     icon: icon('ic-cart'),
-    // },
     {
         title: 'Recipes',
         path: '/recipes',

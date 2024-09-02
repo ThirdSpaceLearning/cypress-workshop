@@ -10,6 +10,11 @@ export type RecipeType = {
     rating: number;
     prepTimeMinutes: number;
     cookTimeMinutes: number;
+    reviewCount: number;
+    servings: number;
+    ingredients: string[];
+    instructions: string[];
+    tags: string[];
 };
 
 export type RecipesType = {

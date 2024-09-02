@@ -2,10 +2,9 @@ import { useQuery } from '@tanstack/react-query';
 
 import { Box, Card, Typography } from '@mui/material';
 
-import DashboardContent from '../layouts/DashboardContent';
-
-import { usersApi, QueryKeys, QUERY_STATUS } from '@services';
+import { DashboardContent } from '@layouts';
 import { UsersTable } from '@features';
+import { usersApi, QueryKeys, QUERY_STATUS } from '@services';
 import { UserType } from '@types';
 
 const UsersPage = () => {
@@ -17,7 +16,7 @@ const UsersPage = () => {
 
     return (
         <DashboardContent>
-            <Typography variant="h4" sx={{ mb: { xs: 3, md: 5 } }}>
+            <Typography variant="h4" sx={{ mb: 3 }}>
                 Users
             </Typography>
 

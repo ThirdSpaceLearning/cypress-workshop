@@ -51,7 +51,11 @@ const Sidebar = () => {
                         alignItems="space-between"
                     >
                         {navData.map((item) => {
-                            const isActive = item.path === pathname;
+                            const partialPath = pathname.split('/')[1];
+
+                            const isActive =
+                                item.path === pathname ||
+                                `/${partialPath}` === item.path;
 
                             return (
                                 <ListItem

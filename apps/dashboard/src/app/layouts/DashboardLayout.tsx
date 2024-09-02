@@ -41,7 +41,6 @@ const DashboardLayout: FC<PropsWithChildren> = ({ children }) => {
                     >
                         {children}
                     </Box>
-                    {/*{footerSection}*/}
                 </Box>
             </Box>
         </>

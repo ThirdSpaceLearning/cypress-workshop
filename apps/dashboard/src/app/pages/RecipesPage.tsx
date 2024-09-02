@@ -4,9 +4,8 @@ import { useQuery } from '@tanstack/react-query';
 import { Box, Grid2 as Grid, Typography } from '@mui/material';
 import { Alert, AlertTitle } from '@mui/lab';
 
-import DashboardContent from '../layouts/DashboardContent';
-
 import { RecipesFilters, RecipeItem } from '@features';
+import { DashboardContent } from '@layouts';
 import { QueryKeys, recipesApi, QUERY_STATUS } from '@services';
 import { Cuisine, MealType, RecipeDifficulty, RecipeType } from '@types';
 
@@ -62,7 +61,7 @@ const RecipesPage = () => {
 
     return (
         <DashboardContent>
-            <Typography variant="h4" sx={{ mb: { xs: 3, md: 5 } }}>
+            <Typography variant="h4" sx={{ mb: 3 }}>
                 Recipes
             </Typography>
             {status === QUERY_STATUS.success && filteredRecipes && (

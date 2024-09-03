@@ -13,3 +13,12 @@
 Ensure that you're running at least Node 18 - this is a requirement for the project to run.
 
 If currently running an earlier version it is advised to use [NVM](https://github.com/nvm-sh/nvm) to manage the Node versions in your machine.
+
+## Tech Stack
+
+* Nx
+* React
+* Axios and React Query
+* DummyJson API
+* Material UI
+

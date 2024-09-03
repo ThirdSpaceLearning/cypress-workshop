@@ -2,7 +2,9 @@
   "name": "@cypress-workshop/source",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+      "start-dashboard": "nx run dashboard:serve"
+  },
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.13.3",

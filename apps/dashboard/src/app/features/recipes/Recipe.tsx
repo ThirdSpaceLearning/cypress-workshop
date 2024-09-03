@@ -53,6 +53,7 @@ const Recipe = () => {
                             startIcon={<ArrowBackRounded />}
                             href="/recipes"
                             color="inherit"
+                            data-cy="back-button"
                         >
                             Back
                         </Button>
@@ -83,7 +84,11 @@ const Recipe = () => {
                         >
                             <Box display="flex" gap={1}>
                                 {recipe.tags.map((type) => (
-                                    <Label key={type} color={'info'}>
+                                    <Label
+                                        key={type}
+                                        color={'info'}
+                                        dataCy="recipe-tag"
+                                    >
                                         {type}
                                     </Label>
                                 ))}
@@ -98,7 +103,7 @@ const Recipe = () => {
                                 >
                                     {CuisineFlags[recipe.cuisine]}
                                 </Box>
-                                <Typography variant="h5">
+                                <Typography variant="h5" data-cy="recipe-title">
                                     {recipe.name}
                                 </Typography>
                             </Stack>
@@ -109,20 +114,31 @@ const Recipe = () => {
                                     precision={0.1}
                                     icon={<StarRateRounded />}
                                     emptyIcon={<StarBorderRounded />}
+                                    data-cy="recipe-rating"
                                 />
-                                <Typography variant="body2">
+                                <Typography
+                                    variant="body2"
+                                    data-cy="recipe-reviews"
+                                >
                                     {`(${recipe.reviewCount} reviews)`}
                                 </Typography>
                             </Stack>
                             <Stack direction="row" spacing={1} mt={1}>
-                                <Typography variant="body2">
+                                <Typography
+                                    variant="body2"
+                                    data-cy="recipe-created-by-label"
+                                >
                                     Created by
                                 </Typography>
                                 <Avatar
                                     src={`/assets/images/avatar/avatar-10.webp`}
                                     sx={{ width: 24, height: 24 }}
+                                    data-cy="recipe-created-by-avatar"
                                 />
-                                <Typography variant="body2">
+                                <Typography
+                                    variant="body2"
+                                    data-cy="recipe-created-by-label"
+                                >
                                     John Smith
                                 </Typography>
                             </Stack>
@@ -143,10 +159,14 @@ const Recipe = () => {
                                     <Typography
                                         variant="body2"
                                         fontWeight="bold"
+                                        data-cy="recipe-calories-label"
                                     >
                                         Calories:
                                     </Typography>
-                                    <Label color="primary">
+                                    <Label
+                                        color="primary"
+                                        dataCy="recipe-calories-value"
+                                    >
                                         {recipe.caloriesPerServing} kcal
                                     </Label>
                                 </Stack>
@@ -158,10 +178,14 @@ const Recipe = () => {
                                     <Typography
                                         variant="body2"
                                         fontWeight="bold"
+                                        data-cy="recipe-servings-label"
                                     >
                                         Servings:
                                     </Typography>
-                                    <Label color="secondary">
+                                    <Label
+                                        color="secondary"
+                                        dataCy="recipe-servings-value"
+                                    >
                                         {recipe.servings}
                                     </Label>
                                 </Stack>
@@ -173,10 +197,14 @@ const Recipe = () => {
                                     <Typography
                                         variant="body2"
                                         fontWeight="bold"
+                                        data-cy="recipe-preparation-time-label"
                                     >
                                         Preparation time:
                                     </Typography>
-                                    <Label color="default">
+                                    <Label
+                                        color="default"
+                                        dataCy="recipe-preparation-time-value"
+                                    >
                                         {recipe.prepTimeMinutes} mins
                                     </Label>
                                 </Stack>
@@ -184,10 +212,14 @@ const Recipe = () => {
                                     <Typography
                                         variant="body2"
                                         fontWeight="bold"
+                                        data-cy="recipe-cooking-time-label"
                                     >
                                         Cooking time:
                                     </Typography>
-                                    <Label color="default">
+                                    <Label
+                                        color="default"
+                                        dataCy="recipe-cooking-time-value"
+                                    >
                                         {recipe.cookTimeMinutes} mins
                                     </Label>
                                 </Stack>
@@ -195,11 +227,16 @@ const Recipe = () => {
                                     <Typography
                                         variant="body2"
                                         fontWeight="bold"
+                                        data-cy="recipe-meal-type-label"
                                     >
-                                        Meal Type:
+                                        Meal type:
                                     </Typography>
                                     {recipe.mealType.map((type) => (
-                                        <Label color="info" key={type}>
+                                        <Label
+                                            color="info"
+                                            key={type}
+                                            dataCy="recipe-meal-type-value"
+                                        >
                                             {type}
                                         </Label>
                                     ))}
@@ -208,6 +245,7 @@ const Recipe = () => {
                                     <Typography
                                         variant="body2"
                                         fontWeight="bold"
+                                        data-cy="recipe-difficulty-label"
                                     >
                                         Difficulty:
                                     </Typography>
@@ -218,6 +256,12 @@ const Recipe = () => {
                                                 ? 'success'
                                                 : 'warning'
                                         }
+                                        dataCy={`recipe-difficulty-${
+                                            recipe.difficulty ===
+                                            RecipeDifficulty.EASY
+                                                ? 'success'
+                                                : 'warning'
+                                        }`}
                                     >
                                         {recipe.difficulty}
                                     </Label>
@@ -236,8 +280,16 @@ const Recipe = () => {
                                     textColor="inherit"
                                     indicatorColor="primary"
                                 >
-                                    <Tab label="Ingredients" value="1" />
-                                    <Tab label="Instructions" value="2" />
+                                    <Tab
+                                        label="Ingredients"
+                                        value="1"
+                                        data-cy="ingredients-tab"
+                                    />
+                                    <Tab
+                                        label="Instructions"
+                                        value="2"
+                                        data-cy="instructions-tab"
+                                    />
                                 </TabList>
                             </Box>
                             <TabPanel value="1">

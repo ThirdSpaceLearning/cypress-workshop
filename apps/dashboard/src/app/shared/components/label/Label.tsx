@@ -5,10 +5,15 @@ import { LabelColor } from './types';
 
 type Props = {
     color: LabelColor;
+    dataCy?: string;
 };
 
-const Label: FC<PropsWithChildren<Props>> = ({ color, children }) => {
-    return <StyledLabel color={color}>{children}</StyledLabel>;
+const Label: FC<PropsWithChildren<Props>> = ({ color, children, dataCy }) => {
+    return (
+        <StyledLabel color={color} data-cy={dataCy}>
+            {children}
+        </StyledLabel>
+    );
 };
 
 export default Label;

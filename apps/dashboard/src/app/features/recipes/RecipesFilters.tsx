@@ -86,6 +86,7 @@ const RecipesFilters: FC<Props> = ({
                 }
                 onClick={onOpenFilter}
                 disableRipple
+                data-cy="filters-button"
             >
                 Filters
             </Button>

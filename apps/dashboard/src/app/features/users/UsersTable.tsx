@@ -27,7 +27,6 @@ const UsersTable: FC<Props> = ({ users }) => {
             <Table sx={{ minWidth: 800 }}>
                 <TableHead>
                     <TableRow>
-                        <TableCell></TableCell>
                         <TableCell>Name</TableCell>
                         <TableCell>Age</TableCell>
                         <TableCell>Company</TableCell>
@@ -43,16 +42,7 @@ const UsersTable: FC<Props> = ({ users }) => {
                             hover
                             tabIndex={-1}
                             role="checkbox"
-                            // selected={selected}
                         >
-                            <TableCell padding="checkbox">
-                                <Checkbox
-                                    disableRipple
-                                    // checked={selected}
-                                    // onChange={onSelectRow}
-                                />
-                            </TableCell>
-
                             <TableCell component="th" scope="row">
                                 <Box gap={2} display="flex" alignItems="center">
                                     <Avatar

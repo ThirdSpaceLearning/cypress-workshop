@@ -3,7 +3,9 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-      "start-dashboard": "nx run dashboard:serve"
+      "start-dashboard": "nx run dashboard:serve",
+      "start-dashboard-e2e": "nx run dashboard-e2e:e2e",
+      "open-dashboard-e2e": "nx open-cypress dashboard-e2e"
   },
   "private": true,
   "dependencies": {

@@ -26,13 +26,15 @@ const UsersTable: FC<Props> = ({ users }) => {
         <TableContainer sx={{ overflow: 'auto' }}>
             <Table sx={{ minWidth: 800 }}>
                 <TableHead>
-                    <TableCell></TableCell>
-                    <TableCell>Name</TableCell>
-                    <TableCell>Age</TableCell>
-                    <TableCell>Company</TableCell>
-                    <TableCell>Title</TableCell>
-                    <TableCell>Role</TableCell>
-                    <TableCell></TableCell>
+                    <TableRow>
+                        <TableCell></TableCell>
+                        <TableCell>Name</TableCell>
+                        <TableCell>Age</TableCell>
+                        <TableCell>Company</TableCell>
+                        <TableCell>Title</TableCell>
+                        <TableCell>Role</TableCell>
+                        <TableCell></TableCell>
+                    </TableRow>
                 </TableHead>
                 <TableBody>
                     {users.map((user, idx) => (

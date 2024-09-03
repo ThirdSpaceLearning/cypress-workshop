@@ -5,6 +5,8 @@ import { defineConfig } from 'cypress';
 export default defineConfig({
     viewportHeight: 800,
     viewportWidth: 1400,
+    screenshotOnRunFailure: false,
+    video: false,
     e2e: {
         ...nxE2EPreset(__filename, {
             cypressDir: 'src',

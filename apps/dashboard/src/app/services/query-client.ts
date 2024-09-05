@@ -8,6 +8,6 @@ export { queryClient };
 export enum QUERY_STATUS {
     error = 'error',
     idle = 'idle',
-    loading = 'loading',
+    pending = 'pending',
     success = 'success',
 }

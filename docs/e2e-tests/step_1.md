@@ -3,7 +3,7 @@
 **Steps:**
 
 1. Create `recipes.cy.ts`
-2. Setup the spec
+2. Add `describe`, `beforeEach`  and `it`
 
 <details>
     <summary>

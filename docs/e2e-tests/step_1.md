@@ -10,6 +10,7 @@
     Solution
     </summary>
 
+```ts
     describe('Recipes Page', () => {
         beforeEach(() => {
             // add repetable actions here
@@ -19,6 +20,8 @@
            // add tests here 
         });
     });
+```
+
 </details>
 
 3. Use `cy.visit('/recipes')` to navigate to the correct page
@@ -28,6 +31,7 @@
     Solution
     </summary>
 
+```ts
     describe('Recipes Page', () => {
         beforeEach(() => {
             cy.visit('/recipes');
@@ -38,6 +42,7 @@
         });
     
     });
+```
 </details>
 
 4. Select the title using the command `cy.get(...)`
@@ -48,6 +53,7 @@
     Solution
     </summary>
 
+```ts
     describe('Recipes Page', () => {
         beforeEach(() => {
             cy.visit('/recipes');
@@ -57,5 +63,6 @@
             cy.get('[data-cy="recipes-title"]').should('contain.text', 'Recipes');
         });
     });
+```
 </details>
 

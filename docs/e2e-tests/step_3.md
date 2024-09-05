@@ -3,14 +3,26 @@
 **Steps:**
 
 1. Create a new test function
+<details>
+    <summary>
+    Solution
+    </summary>
+
 ```ts
 it('should display the recipes pages data', () => {
     // tests here
 });
 ```
 
+</details>
+
 2. Check that the Filters button exists `data-cy="filters-button"` and contains text `Filters`
-1. Create a new test function
+3. Create a new test function
+<details>
+    <summary>
+    Solution
+    </summary>
+
 ```ts
 it('should display the recipes pages data', () => {
     // Filters Button
@@ -18,7 +30,14 @@ it('should display the recipes pages data', () => {
     cy.get('[data-cy="filters-button"]').should('contain.text', 'Filters');
 });
 ```
-2. Check that the first card of the list contains the expected values. Get the recipe item with `cy.get(...).as('recipe)`
+</details>
+
+4. Check that the first card of the list contains the expected values. Get the recipe item with `cy.get(...).as('recipe)`
+<details>
+    <summary>
+    Solution
+    </summary>
+
 ```ts
 it('should display the recipes pages data', () => {
     // ...
@@ -26,7 +45,9 @@ it('should display the recipes pages data', () => {
     cy.get('[data-cy="recipe-item"]').eq(0).as('recipe');
 });
 ```
-3. Check the data within the recipe
+</details>
+
+5. Check the data within the recipe
    1. Title should contain `Classic Margherita`
    2. Preparation time should contain text `20 mins`
    3. Cooking time should contain text `15 mins`
@@ -35,6 +56,12 @@ it('should display the recipes pages data', () => {
    6. Difficulty contains text `Easy`
        1. Extra: check that the colour is green
    7. Title should contain `href` that redirects to `/recipe/1`
+
+<details>
+    <summary>
+    Solution
+    </summary>
+
 ```ts
     it('should display the recipes pages data', () => {
         // Filters Button
@@ -88,4 +115,4 @@ it('should display the recipes pages data', () => {
         });
     });
 ```
-
+</details>

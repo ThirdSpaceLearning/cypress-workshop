@@ -232,10 +232,8 @@ describe('Recipes Page', () => {
         cy.getBySel('filters-button-badge').should('be.visible');
 
         // Check all recipes have the difficulty label Easy
-        cy.getBySel('recipe-item').each((el) => {
-            cy.wrap(el)
-                .getBySel('recipe-difficulty')
-                .should('contain.text', 'Easy');
+        cy.getBySel('recipe-difficulty').each((el) => {
+            cy.wrap(el).should('contain.text', 'Easy');
         });
     });
 });

@@ -11,6 +11,11 @@ import {
 import { CuisineFlags, RecipeDifficulty, RecipeType } from '@types';
 import { Label, LabelColor } from '@shared';
 
+const difficultyMap: Record<RecipeDifficulty, LabelColor> = {
+    [RecipeDifficulty.EASY]: 'success',
+    [RecipeDifficulty.MEDIUM]: 'warning',
+};
+
 type Props = {
     recipe: RecipeType;
 };
@@ -18,18 +23,14 @@ type Props = {
 type DetailProps = {
     icon: ReactNode;
     label: string;
+    dataCy: string;
 };
 
-const difficultyMap: Record<RecipeDifficulty, LabelColor> = {
-    [RecipeDifficulty.EASY]: 'success',
-    [RecipeDifficulty.MEDIUM]: 'warning',
-};
-
-const RecipeDetail: FC<DetailProps> = ({ icon, label }) => {
+const RecipeDetail: FC<DetailProps> = ({ icon, label, dataCy }) => {
     return (
         <Box display="flex" alignItems="center" gap={0.5}>
             {icon}
-            <Typography variant="caption" fontWeight="bold">
+            <Typography variant="caption" fontWeight="bold" data-cy={dataCy}>
                 {label}
             </Typography>
         </Box>
@@ -38,7 +39,7 @@ const RecipeDetail: FC<DetailProps> = ({ icon, label }) => {
 
 const RecipeItem: FC<Props> = ({ recipe }) => {
     return (
-        <Card>
+        <Card data-cy="recipe-item">
             <Box sx={{ pt: '100%', position: 'relative' }}>
                 <Box
                     component="img"
@@ -97,6 +98,7 @@ const RecipeItem: FC<Props> = ({ recipe }) => {
                             textOverflow: 'ellipsis',
                             maxWidth: '100%',
                         }}
+                        data-cy="recipe-title"
                     >
                         {recipe.name}
                     </Link>
@@ -111,29 +113,39 @@ const RecipeItem: FC<Props> = ({ recipe }) => {
                 >
                     <RecipeDetail
                         icon={<AvTimerRounded fontSize="small" />}
-                        label={`${recipe.prepTimeMinutes} min`}
+                        label={`${recipe.prepTimeMinutes} mins`}
+                        dataCy="recipe-preparation-time"
                     />
                     <RecipeDetail
                         icon={<MicrowaveRounded fontSize="small" />}
-                        label={`${recipe.cookTimeMinutes} min`}
+                        label={`${recipe.cookTimeMinutes} mins`}
+                        dataCy="recipe-cooking-time"
                     />
                     <RecipeDetail
                         icon={<LocalFireDepartmentRounded fontSize="small" />}
                         label={`${recipe.caloriesPerServing} kcal`}
+                        dataCy="recipe-calories"
                     />
                 </Box>
 
                 <Box display="flex" alignItems="center">
                     <Box display="flex" gap={1}>
                         {recipe.mealType.map((type) => (
-                            <Label key={type} color={'info'}>
+                            <Label
+                                key={type}
+                                color={'info'}
+                                dataCy="recipe-meal-type"
+                            >
                                 {type}
                             </Label>
                         ))}
                     </Box>
                 </Box>
                 <Box display="flex" alignItems="center">
-                    <Label color={difficultyMap[recipe.difficulty]}>
+                    <Label
+                        color={difficultyMap[recipe.difficulty]}
+                        dataCy="recipe-difficulty"
+                    >
                         {recipe.difficulty}
                     </Label>
                 </Box>

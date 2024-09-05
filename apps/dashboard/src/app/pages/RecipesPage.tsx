@@ -1,7 +1,12 @@
 import { useCallback, useMemo, useState } from 'react';
 import { useQuery } from '@tanstack/react-query';
 
-import { Box, Grid2 as Grid, Typography } from '@mui/material';
+import {
+    Box,
+    CircularProgress,
+    Grid2 as Grid,
+    Typography,
+} from '@mui/material';
 import { Alert, AlertTitle } from '@mui/lab';
 
 import { RecipesFilters, RecipeItem } from '@features';
@@ -61,9 +66,23 @@ const RecipesPage = () => {
 
     return (
         <DashboardContent>
-            <Typography variant="h4" sx={{ mb: 3 }}>
+            <Typography variant="h4" sx={{ mb: 3 }} data-cy="recipes-title">
                 Recipes
             </Typography>
+            {status === QUERY_STATUS.pending && (
+                <Box
+                    sx={{
+                        display: 'flex',
+                        flexGrow: 1,
+                        width: '100%',
+                        justifyContent: 'center',
+                        alignItems: 'center',
+                    }}
+                    data-cy="loading-spinner"
+                >
+                    <CircularProgress />
+                </Box>
+            )}
             {status === QUERY_STATUS.success && filteredRecipes && (
                 <Box
                     sx={{

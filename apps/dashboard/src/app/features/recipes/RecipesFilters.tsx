@@ -1,4 +1,4 @@
-import { FC, useState } from 'react';
+import { FC, HTMLAttributes, useState } from 'react';
 
 import {
     Badge,
@@ -31,8 +31,10 @@ const RecipesStack: FC<StackProps> = ({
     onChange,
 }) => {
     return (
-        <Stack spacing={1}>
-            <Typography variant="subtitle2">{label}</Typography>
+        <Stack spacing={1} data-cy="filters-category">
+            <Typography variant="subtitle2" data-cy="filters-category-label">
+                {label}
+            </Typography>
             <RadioGroup>
                 {options.map((option) => (
                     <FormControlLabel
@@ -45,6 +47,7 @@ const RecipesStack: FC<StackProps> = ({
                             />
                         }
                         label={option}
+                        data-cy="filters-category-option"
                     />
                 ))}
             </RadioGroup>
@@ -80,12 +83,22 @@ const RecipesFilters: FC<Props> = ({
             <Button
                 color="inherit"
                 endIcon={
-                    <Badge color="error" variant="dot" invisible={!canReset}>
+                    <Badge
+                        color="error"
+                        variant="dot"
+                        invisible={!canReset}
+                        slotProps={{
+                            badge: {
+                                'data-cy': 'filters-button-badge',
+                            } as HTMLAttributes<HTMLSpanElement>,
+                        }}
+                    >
                         <FilterListRounded />
                     </Badge>
                 }
                 onClick={onOpenFilter}
                 disableRipple
+                data-cy="filters-button"
             >
                 Filters
             </Button>
@@ -97,27 +110,37 @@ const RecipesFilters: FC<Props> = ({
                 PaperProps={{
                     sx: { width: 280, overflow: 'hidden' },
                 }}
+                data-cy="filters-drawer"
             >
                 <Box
                     display="flex"
                     alignItems="center"
                     sx={{ pl: 2.5, pr: 1.5, py: 2 }}
                 >
-                    <Typography variant="h6" flexGrow={1}>
+                    <Typography
+                        variant="h6"
+                        flexGrow={1}
+                        data-cy="filters-label"
+                    >
                         Filters
                     </Typography>
 
-                    <IconButton onClick={onResetFilter}>
+                    <IconButton onClick={onResetFilter} data-cy="reset-button">
                         <Badge
                             color="error"
                             variant="dot"
                             invisible={!canReset}
+                            slotProps={{
+                                badge: {
+                                    'data-cy': 'reset-button-badge',
+                                } as HTMLAttributes<HTMLSpanElement>,
+                            }}
                         >
                             <RestartAlt />
                         </Badge>
                     </IconButton>
 
-                    <IconButton onClick={onCloseFilter}>
+                    <IconButton onClick={onCloseFilter} data-cy="close-button">
                         <Close />
                     </IconButton>
                 </Box>

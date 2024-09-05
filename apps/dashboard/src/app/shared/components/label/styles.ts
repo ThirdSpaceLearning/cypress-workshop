@@ -26,7 +26,7 @@ export const StyledLabel = styled(Box)<{ color: LabelColor }>(
                 : theme.palette[color].dark,
         backgroundColor:
             color === 'default'
-                ? `rgba(${theme.palette.grey['500Channel']} / ${0.16})`
-                : `rgba(${theme.palette[color].mainChannel} / ${0.16})`,
+                ? `rgba(${theme.palette.grey['500Channel']} / 0.16)`
+                : `rgba(${theme.palette[color].mainChannel} / 0.16)`,
     })
 );

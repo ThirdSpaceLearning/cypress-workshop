@@ -9,6 +9,7 @@ export default defineConfig({
     screenshotOnRunFailure: false,
     video: false,
     e2e: {
+        blockHosts: ['*cdn.dummyjson.com'],
         ...nxE2EPreset(__filename, {
             cypressDir: 'src',
             webServerCommands: {

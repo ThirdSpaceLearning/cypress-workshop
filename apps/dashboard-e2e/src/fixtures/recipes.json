@@ -1,0 +1,675 @@
+{
+    "recipes": [
+        {
+            "id": 1,
+            "name": "Classic Margherita Pizza",
+            "image": "https://cdn.dummyjson.com/recipe-images/1.webp",
+            "difficulty": "Easy",
+            "caloriesPerServing": 300,
+            "prepTimeMinutes": 20,
+            "cookTimeMinutes": 15,
+            "cuisine": "Italian",
+            "mealType": [
+                "Dinner"
+            ]
+        },
+        {
+            "id": 2,
+            "name": "Vegetarian Stir-Fry",
+            "image": "https://cdn.dummyjson.com/recipe-images/2.webp",
+            "difficulty": "Medium",
+            "caloriesPerServing": 250,
+            "prepTimeMinutes": 15,
+            "cookTimeMinutes": 20,
+            "cuisine": "Asian",
+            "mealType": [
+                "Lunch"
+            ]
+        },
+        {
+            "id": 3,
+            "name": "Chocolate Chip Cookies",
+            "image": "https://cdn.dummyjson.com/recipe-images/3.webp",
+            "difficulty": "Easy",
+            "caloriesPerServing": 150,
+            "prepTimeMinutes": 15,
+            "cookTimeMinutes": 10,
+            "cuisine": "American",
+            "mealType": [
+                "Snack",
+                "Dessert"
+            ]
+        },
+        {
+            "id": 4,
+            "name": "Chicken Alfredo Pasta",
+            "image": "https://cdn.dummyjson.com/recipe-images/4.webp",
+            "difficulty": "Medium",
+            "caloriesPerServing": 500,
+            "prepTimeMinutes": 15,
+            "cookTimeMinutes": 20,
+            "cuisine": "Italian",
+            "mealType": [
+                "Lunch",
+                "Dinner"
+            ]
+        },
+        {
+            "id": 5,
+            "name": "Mango Salsa Chicken",
+            "image": "https://cdn.dummyjson.com/recipe-images/5.webp",
+            "difficulty": "Easy",
+            "caloriesPerServing": 380,
+            "prepTimeMinutes": 15,
+            "cookTimeMinutes": 25,
+            "cuisine": "Mexican",
+            "mealType": [
+                "Dinner"
+            ]
+        },
+        {
+            "id": 6,
+            "name": "Quinoa Salad with Avocado",
+            "image": "https://cdn.dummyjson.com/recipe-images/6.webp",
+            "difficulty": "Easy",
+            "caloriesPerServing": 280,
+            "prepTimeMinutes": 20,
+            "cookTimeMinutes": 15,
+            "cuisine": "Mediterranean",
+            "mealType": [
+                "Lunch",
+                "Side Dish"
+            ]
+        },
+        {
+            "id": 7,
+            "name": "Tomato Basil Bruschetta",
+            "image": "https://cdn.dummyjson.com/recipe-images/7.webp",
+            "difficulty": "Easy",
+            "caloriesPerServing": 120,
+            "prepTimeMinutes": 15,
+            "cookTimeMinutes": 10,
+            "cuisine": "Italian",
+            "mealType": [
+                "Appetizer"
+            ]
+        },
+        {
+            "id": 8,
+            "name": "Beef and Broccoli Stir-Fry",
+            "image": "https://cdn.dummyjson.com/recipe-images/8.webp",
+            "difficulty": "Medium",
+            "caloriesPerServing": 380,
+            "prepTimeMinutes": 20,
+            "cookTimeMinutes": 15,
+            "cuisine": "Asian",
+            "mealType": [
+                "Dinner"
+            ]
+        },
+        {
+            "id": 9,
+            "name": "Caprese Salad",
+            "image": "https://cdn.dummyjson.com/recipe-images/9.webp",
+            "difficulty": "Easy",
+            "caloriesPerServing": 200,
+            "prepTimeMinutes": 10,
+            "cookTimeMinutes": 0,
+            "cuisine": "Italian",
+            "mealType": [
+                "Lunch"
+            ]
+        },
+        {
+            "id": 10,
+            "name": "Shrimp Scampi Pasta",
+            "image": "https://cdn.dummyjson.com/recipe-images/10.webp",
+            "difficulty": "Medium",
+            "caloriesPerServing": 400,
+            "prepTimeMinutes": 15,
+            "cookTimeMinutes": 20,
+            "cuisine": "Italian",
+            "mealType": [
+                "Dinner"
+            ]
+        },
+        {
+            "id": 11,
+            "name": "Chicken Biryani",
+            "image": "https://cdn.dummyjson.com/recipe-images/11.webp",
+            "difficulty": "Medium",
+            "caloriesPerServing": 550,
+            "prepTimeMinutes": 30,
+            "cookTimeMinutes": 45,
+            "cuisine": "Pakistani",
+            "mealType": [
+                "Lunch",
+                "Dinner"
+            ]
+        },
+        {
+            "id": 12,
+            "name": "Chicken Karahi",
+            "image": "https://cdn.dummyjson.com/recipe-images/12.webp",
+            "difficulty": "Easy",
+            "caloriesPerServing": 420,
+            "prepTimeMinutes": 20,
+            "cookTimeMinutes": 30,
+            "cuisine": "Pakistani",
+            "mealType": [
+                "Lunch",
+                "Dinner"
+            ]
+        },
+        {
+            "id": 13,
+            "name": "Aloo Keema",
+            "image": "https://cdn.dummyjson.com/recipe-images/13.webp",
+            "difficulty": "Medium",
+            "caloriesPerServing": 380,
+            "prepTimeMinutes": 25,
+            "cookTimeMinutes": 35,
+            "cuisine": "Pakistani",
+            "mealType": [
+                "Lunch",
+                "Dinner"
+            ]
+        },
+        {
+            "id": 14,
+            "name": "Chapli Kebabs",
+            "image": "https://cdn.dummyjson.com/recipe-images/14.webp",
+            "difficulty": "Medium",
+            "caloriesPerServing": 320,
+            "prepTimeMinutes": 30,
+            "cookTimeMinutes": 20,
+            "cuisine": "Pakistani",
+            "mealType": [
+                "Lunch",
+                "Dinner",
+                "Snacks"
+            ]
+        },
+        {
+            "id": 15,
+            "name": "Saag (Spinach) with Makki di Roti",
+            "image": "https://cdn.dummyjson.com/recipe-images/15.webp",
+            "difficulty": "Medium",
+            "caloriesPerServing": 280,
+            "prepTimeMinutes": 40,
+            "cookTimeMinutes": 30,
+            "cuisine": "Pakistani",
+            "mealType": [
+                "Breakfast",
+                "Lunch",
+                "Dinner"
+            ]
+        },
+        {
+            "id": 16,
+            "name": "Japanese Ramen Soup",
+            "image": "https://cdn.dummyjson.com/recipe-images/16.webp",
+            "difficulty": "Medium",
+            "caloriesPerServing": 480,
+            "prepTimeMinutes": 20,
+            "cookTimeMinutes": 25,
+            "cuisine": "Japanese",
+            "mealType": [
+                "Dinner"
+            ]
+        },
+        {
+            "id": 17,
+            "name": "Moroccan Chickpea Tagine",
+            "image": "https://cdn.dummyjson.com/recipe-images/17.webp",
+            "difficulty": "Easy",
+            "caloriesPerServing": 320,
+            "prepTimeMinutes": 15,
+            "cookTimeMinutes": 30,
+            "cuisine": "Moroccan",
+            "mealType": [
+                "Dinner"
+            ]
+        },
+        {
+            "id": 18,
+            "name": "Korean Bibimbap",
+            "image": "https://cdn.dummyjson.com/recipe-images/18.webp",
+            "difficulty": "Medium",
+            "caloriesPerServing": 550,
+            "prepTimeMinutes": 30,
+            "cookTimeMinutes": 20,
+            "cuisine": "Korean",
+            "mealType": [
+                "Dinner"
+            ]
+        },
+        {
+            "id": 19,
+            "name": "Greek Moussaka",
+            "image": "https://cdn.dummyjson.com/recipe-images/19.webp",
+            "difficulty": "Medium",
+            "caloriesPerServing": 420,
+            "prepTimeMinutes": 45,
+            "cookTimeMinutes": 45,
+            "cuisine": "Greek",
+            "mealType": [
+                "Dinner"
+            ]
+        },
+        {
+            "id": 20,
+            "name": "Butter Chicken (Murgh Makhani)",
+            "image": "https://cdn.dummyjson.com/recipe-images/20.webp",
+            "difficulty": "Medium",
+            "caloriesPerServing": 480,
+            "prepTimeMinutes": 30,
+            "cookTimeMinutes": 25,
+            "cuisine": "Pakistani",
+            "mealType": [
+                "Dinner"
+            ]
+        },
+        {
+            "id": 21,
+            "name": "Thai Green Curry",
+            "image": "https://cdn.dummyjson.com/recipe-images/21.webp",
+            "difficulty": "Medium",
+            "caloriesPerServing": 480,
+            "prepTimeMinutes": 20,
+            "cookTimeMinutes": 30,
+            "cuisine": "Thai",
+            "mealType": [
+                "Dinner"
+            ]
+        },
+        {
+            "id": 22,
+            "name": "Mango Lassi",
+            "image": "https://cdn.dummyjson.com/recipe-images/22.webp",
+            "difficulty": "Easy",
+            "caloriesPerServing": 180,
+            "prepTimeMinutes": 10,
+            "cookTimeMinutes": 0,
+            "cuisine": "Indian",
+            "mealType": [
+                "Beverage"
+            ]
+        },
+        {
+            "id": 23,
+            "name": "Italian Tiramisu",
+            "image": "https://cdn.dummyjson.com/recipe-images/23.webp",
+            "difficulty": "Medium",
+            "caloriesPerServing": 350,
+            "prepTimeMinutes": 30,
+            "cookTimeMinutes": 0,
+            "cuisine": "Italian",
+            "mealType": [
+                "Dessert"
+            ]
+        },
+        {
+            "id": 24,
+            "name": "Turkish Kebabs",
+            "image": "https://cdn.dummyjson.com/recipe-images/24.webp",
+            "difficulty": "Easy",
+            "caloriesPerServing": 280,
+            "prepTimeMinutes": 25,
+            "cookTimeMinutes": 15,
+            "cuisine": "Turkish",
+            "mealType": [
+                "Dinner"
+            ]
+        },
+        {
+            "id": 25,
+            "name": "Blueberry Banana Smoothie",
+            "image": "https://cdn.dummyjson.com/recipe-images/25.webp",
+            "difficulty": "Easy",
+            "caloriesPerServing": 220,
+            "prepTimeMinutes": 10,
+            "cookTimeMinutes": 0,
+            "cuisine": "Smoothie",
+            "mealType": [
+                "Breakfast",
+                "Beverage"
+            ]
+        },
+        {
+            "id": 26,
+            "name": "Mexican Street Corn (Elote)",
+            "image": "https://cdn.dummyjson.com/recipe-images/26.webp",
+            "difficulty": "Easy",
+            "caloriesPerServing": 180,
+            "prepTimeMinutes": 15,
+            "cookTimeMinutes": 15,
+            "cuisine": "Mexican",
+            "mealType": [
+                "Snack",
+                "Side Dish"
+            ]
+        },
+        {
+            "id": 27,
+            "name": "Russian Borscht",
+            "image": "https://cdn.dummyjson.com/recipe-images/27.webp",
+            "difficulty": "Medium",
+            "caloriesPerServing": 220,
+            "prepTimeMinutes": 30,
+            "cookTimeMinutes": 40,
+            "cuisine": "Russian",
+            "mealType": [
+                "Dinner"
+            ]
+        },
+        {
+            "id": 28,
+            "name": "South Indian Masala Dosa",
+            "image": "https://cdn.dummyjson.com/recipe-images/28.webp",
+            "difficulty": "Medium",
+            "caloriesPerServing": 320,
+            "prepTimeMinutes": 40,
+            "cookTimeMinutes": 20,
+            "cuisine": "Indian",
+            "mealType": [
+                "Breakfast"
+            ]
+        },
+        {
+            "id": 29,
+            "name": "Lebanese Falafel Wrap",
+            "image": "https://cdn.dummyjson.com/recipe-images/29.webp",
+            "difficulty": "Easy",
+            "caloriesPerServing": 400,
+            "prepTimeMinutes": 15,
+            "cookTimeMinutes": 10,
+            "cuisine": "Lebanese",
+            "mealType": [
+                "Lunch"
+            ]
+        },
+        {
+            "id": 30,
+            "name": "Brazilian Caipirinha",
+            "image": "https://cdn.dummyjson.com/recipe-images/30.webp",
+            "difficulty": "Easy",
+            "caloriesPerServing": 150,
+            "prepTimeMinutes": 5,
+            "cookTimeMinutes": 0,
+            "cuisine": "Brazilian",
+            "mealType": [
+                "Beverage"
+            ]
+        },
+        {
+            "id": 31,
+            "name": "Spanish Patatas Bravas",
+            "image": "https://cdn.dummyjson.com/recipe-images/31.webp",
+            "difficulty": "Easy",
+            "caloriesPerServing": 240,
+            "prepTimeMinutes": 20,
+            "cookTimeMinutes": 30,
+            "cuisine": "Spanish",
+            "mealType": [
+                "Appetizer"
+            ]
+        },
+        {
+            "id": 32,
+            "name": "Vietnamese Fresh Spring Rolls",
+            "image": "https://cdn.dummyjson.com/recipe-images/32.webp",
+            "difficulty": "Easy",
+            "caloriesPerServing": 180,
+            "prepTimeMinutes": 15,
+            "cookTimeMinutes": 10,
+            "cuisine": "Vietnamese",
+            "mealType": [
+                "Appetizer"
+            ]
+        },
+        {
+            "id": 33,
+            "name": "Mediterranean Quinoa Salad",
+            "image": "https://cdn.dummyjson.com/recipe-images/33.webp",
+            "difficulty": "Easy",
+            "caloriesPerServing": 220,
+            "prepTimeMinutes": 20,
+            "cookTimeMinutes": 15,
+            "cuisine": "Mediterranean",
+            "mealType": [
+                "Lunch",
+                "Side Dish"
+            ]
+        },
+        {
+            "id": 34,
+            "name": "Japanese Matcha Green Tea Ice Cream",
+            "image": "https://cdn.dummyjson.com/recipe-images/34.webp",
+            "difficulty": "Medium",
+            "caloriesPerServing": 280,
+            "prepTimeMinutes": 30,
+            "cookTimeMinutes": 15,
+            "cuisine": "Japanese",
+            "mealType": [
+                "Dessert"
+            ]
+        },
+        {
+            "id": 35,
+            "name": "Brazilian Chocolate Brigadeiros",
+            "image": "https://cdn.dummyjson.com/recipe-images/35.webp",
+            "difficulty": "Easy",
+            "caloriesPerServing": 120,
+            "prepTimeMinutes": 20,
+            "cookTimeMinutes": 10,
+            "cuisine": "Brazilian",
+            "mealType": [
+                "Dessert"
+            ]
+        },
+        {
+            "id": 36,
+            "name": "Mexican Chicken Enchiladas",
+            "image": "https://cdn.dummyjson.com/recipe-images/36.webp",
+            "difficulty": "Medium",
+            "caloriesPerServing": 380,
+            "prepTimeMinutes": 25,
+            "cookTimeMinutes": 20,
+            "cuisine": "Mexican",
+            "mealType": [
+                "Dinner"
+            ]
+        },
+        {
+            "id": 37,
+            "name": "Thai Coconut Shrimp Curry",
+            "image": "https://cdn.dummyjson.com/recipe-images/37.webp",
+            "difficulty": "Medium",
+            "caloriesPerServing": 420,
+            "prepTimeMinutes": 20,
+            "cookTimeMinutes": 15,
+            "cuisine": "Thai",
+            "mealType": [
+                "Dinner"
+            ]
+        },
+        {
+            "id": 38,
+            "name": "Greek Spanakopita",
+            "image": "https://cdn.dummyjson.com/recipe-images/38.webp",
+            "difficulty": "Medium",
+            "caloriesPerServing": 280,
+            "prepTimeMinutes": 30,
+            "cookTimeMinutes": 40,
+            "cuisine": "Greek",
+            "mealType": [
+                "Appetizer"
+            ]
+        },
+        {
+            "id": 39,
+            "name": "Moroccan Couscous Salad",
+            "image": "https://cdn.dummyjson.com/recipe-images/39.webp",
+            "difficulty": "Easy",
+            "caloriesPerServing": 260,
+            "prepTimeMinutes": 15,
+            "cookTimeMinutes": 10,
+            "cuisine": "Moroccan",
+            "mealType": [
+                "Lunch",
+                "Side Dish"
+            ]
+        },
+        {
+            "id": 40,
+            "name": "Classic Mojito",
+            "image": "https://cdn.dummyjson.com/recipe-images/40.webp",
+            "difficulty": "Easy",
+            "caloriesPerServing": 150,
+            "prepTimeMinutes": 10,
+            "cookTimeMinutes": 0,
+            "cuisine": "Cocktail",
+            "mealType": [
+                "Beverage"
+            ]
+        },
+        {
+            "id": 41,
+            "name": "Caprese Bruschetta",
+            "image": "https://cdn.dummyjson.com/recipe-images/41.webp",
+            "difficulty": "Easy",
+            "caloriesPerServing": 150,
+            "prepTimeMinutes": 15,
+            "cookTimeMinutes": 5,
+            "cuisine": "Italian",
+            "mealType": [
+                "Appetizer"
+            ]
+        },
+        {
+            "id": 42,
+            "name": "Teriyaki Chicken Stir-Fry",
+            "image": "https://cdn.dummyjson.com/recipe-images/42.webp",
+            "difficulty": "Easy",
+            "caloriesPerServing": 320,
+            "prepTimeMinutes": 15,
+            "cookTimeMinutes": 10,
+            "cuisine": "Japanese",
+            "mealType": [
+                "Dinner"
+            ]
+        },
+        {
+            "id": 43,
+            "name": "Mango Avocado Salsa",
+            "image": "https://cdn.dummyjson.com/recipe-images/43.webp",
+            "difficulty": "Easy",
+            "caloriesPerServing": 90,
+            "prepTimeMinutes": 10,
+            "cookTimeMinutes": 0,
+            "cuisine": "Mexican",
+            "mealType": [
+                "Snack",
+                "Appetizer"
+            ]
+        },
+        {
+            "id": 44,
+            "name": "Shrimp and Asparagus Stir-Fry",
+            "image": "https://cdn.dummyjson.com/recipe-images/44.webp",
+            "difficulty": "Easy",
+            "caloriesPerServing": 250,
+            "prepTimeMinutes": 15,
+            "cookTimeMinutes": 10,
+            "cuisine": "Asian",
+            "mealType": [
+                "Dinner"
+            ]
+        },
+        {
+            "id": 45,
+            "name": "Italian Margherita Pizza",
+            "image": "https://cdn.dummyjson.com/recipe-images/45.webp",
+            "difficulty": "Easy",
+            "caloriesPerServing": 280,
+            "prepTimeMinutes": 20,
+            "cookTimeMinutes": 12,
+            "cuisine": "Italian",
+            "mealType": [
+                "Dinner"
+            ]
+        },
+        {
+            "id": 46,
+            "name": "Pesto Pasta with Cherry Tomatoes",
+            "image": "https://cdn.dummyjson.com/recipe-images/46.webp",
+            "difficulty": "Easy",
+            "caloriesPerServing": 320,
+            "prepTimeMinutes": 15,
+            "cookTimeMinutes": 10,
+            "cuisine": "Italian",
+            "mealType": [
+                "Dinner"
+            ]
+        },
+        {
+            "id": 47,
+            "name": "Hawaiian Chicken Skewers",
+            "image": "https://cdn.dummyjson.com/recipe-images/47.webp",
+            "difficulty": "Easy",
+            "caloriesPerServing": 280,
+            "prepTimeMinutes": 20,
+            "cookTimeMinutes": 15,
+            "cuisine": "Hawaiian",
+            "mealType": [
+                "Dinner"
+            ]
+        },
+        {
+            "id": 48,
+            "name": "Cucumber Avocado Rolls",
+            "image": "https://cdn.dummyjson.com/recipe-images/48.webp",
+            "difficulty": "Easy",
+            "caloriesPerServing": 180,
+            "prepTimeMinutes": 20,
+            "cookTimeMinutes": 0,
+            "cuisine": "Japanese",
+            "mealType": [
+                "Appetizer",
+                "Lunch"
+            ]
+        },
+        {
+            "id": 49,
+            "name": "Mediterranean Chickpea Salad",
+            "image": "https://cdn.dummyjson.com/recipe-images/49.webp",
+            "difficulty": "Easy",
+            "caloriesPerServing": 220,
+            "prepTimeMinutes": 15,
+            "cookTimeMinutes": 0,
+            "cuisine": "Mediterranean",
+            "mealType": [
+                "Lunch",
+                "Side Dish"
+            ]
+        },
+        {
+            "id": 50,
+            "name": "Pineapple Coconut Smoothie",
+            "image": "https://cdn.dummyjson.com/recipe-images/50.webp",
+            "difficulty": "Easy",
+            "caloriesPerServing": 200,
+            "prepTimeMinutes": 10,
+            "cookTimeMinutes": 0,
+            "cuisine": "Smoothie",
+            "mealType": [
+                "Breakfast",
+                "Beverage"
+            ]
+        }
+    ],
+    "total": 50,
+    "skip": 0,
+    "limit": 50
+}

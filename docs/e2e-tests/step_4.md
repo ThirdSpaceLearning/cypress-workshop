@@ -3,6 +3,11 @@
 **Steps:**
 
 1. Intercept the `/recipe` request
+<details>
+    <summary>
+    Solution
+    </summary>
+
 ```ts
 it('should redirect to the recipe', () => {
     // Intercept recipe request
@@ -11,7 +16,14 @@ it('should redirect to the recipe', () => {
     });
 });
 ```
+</details>
+
 2. Click the title by using `cy.click(...)`
+<details>
+    <summary>
+    Solution
+    </summary>
+
 ```ts
 it('should redirect to the recipe', () => {
     // ...
@@ -20,7 +32,14 @@ it('should redirect to the recipe', () => {
     cy.get('[data-cy="recipe-title"]').eq(0).click();
 });
 ```
+</details>
+
 3. Check the url by using `cy.url(...)`
+<details>
+    <summary>
+    Solution
+    </summary>
+
 ```ts
 it('should redirect to the recipe', () => {
 // Intercept recipe request
@@ -35,3 +54,4 @@ it('should redirect to the recipe', () => {
     cy.url().should('include', '/recipes/1');
 });
 ```
+</details>

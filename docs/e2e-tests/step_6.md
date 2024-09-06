@@ -2,9 +2,13 @@
 
 **Steps:**
 
-
 1. Create new `recipe.cy` file
 2. Add `describe`, `beforeEach` and `it`
+<details>
+    <summary>
+    Solution
+    </summary>
+
 ```ts
 describe('Recipe Page', () => {
     beforeEach(() => {
@@ -16,7 +20,14 @@ describe('Recipe Page', () => {
     });
 });
 ```
+</details>
+
 3. Add the recipe request intercept and visit the site
+<details>
+    <summary>
+    Solution
+    </summary>
+
 ```ts
 describe('Recipe Page', () => {
     beforeEach(() => {
@@ -32,7 +43,15 @@ describe('Recipe Page', () => {
     });
 });
 ```
-3. Check that the Back button exists `data-cy="filters-button"` and contains text `Back` and the `href` attribute is correct
+</details>
+
+4. Check that the Back button exists `data-cy="filters-button"` and contains text `Back` and the `href` attribute is correct
+
+<details>
+    <summary>
+    Solution
+    </summary>
+
 ```ts
 it('should display the back button', () => {
     cy.getBySel('back-button').should('exist');
@@ -44,7 +63,9 @@ it('should display the back button', () => {
         .and('include', '/recipes');
 });
 ```
-4. Check that the data is correct:
+</details>
+
+5. Check that the data is correct:
     1. Tags lists includes: `Pizza` and `Italian`
     2. Title should contain `Classic Margherita Pizza`
     3. Rating should exist
@@ -55,6 +76,12 @@ it('should display the back button', () => {
     8. Meal type should include one label with the text `Dinner`
     9. Difficulty contains text `Easy` and label should have `success` `data-cy`
     10. Ingredients and Instructions tabs should exist
+
+<details>
+    <summary>
+    Solution
+    </summary>
+
 ```ts
 it('should display the recipe data', () => {
     // Tags
@@ -134,3 +161,4 @@ it('should display the recipe data', () => {
     cy.getBySel('instructions-tab').should('contain.text', 'Instructions');
 });
 ```
+</details>

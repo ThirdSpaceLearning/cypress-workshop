@@ -1,7 +1,5 @@
 ## Cypress Tests Setup
 
----
-
 1. We added the viewport width and height:
 
 ```

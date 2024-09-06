@@ -3,13 +3,25 @@
 **Steps:**
 
 1. Click the filters button `cy.click()` - no need to check if it exists as we’ve already done so before
+<details>
+    <summary>
+    Solution
+    </summary>
+
 ```ts
 it('should show the correct filter options', () => {
     // Click the filters button
     cy.getBySel('filters-button').click();
 });
 ```
+</details>
+
 2. Check the drawer has opened `.should('be.visible')`
+<details>
+    <summary>
+    Solution
+    </summary>
+
 ```ts
 it('should show the correct filter options', () => {
     // ...
@@ -18,7 +30,14 @@ it('should show the correct filter options', () => {
     cy.getBySel('filters-drawer').should('be.visible');
 });
 ```
+</details>
+
 3. Check for the drawer label, reset button (including the badge) and close button
+<details>
+    <summary>
+    Solution
+    </summary>
+
 ```ts
 it('should show the correct filter options', () => {
     // ...
@@ -34,7 +53,14 @@ it('should show the correct filter options', () => {
     cy.getBySel('close-button').should('exist');
 });
 ```
+</details>
+
 4. Check that we have 3 filter categories `.should('have.length', 3)`
+<details>
+    <summary>
+    Solution
+    </summary>
+
 ```ts
 it('should show the correct filter options', () => {
     // ...
@@ -43,7 +69,14 @@ it('should show the correct filter options', () => {
     cy.getBySel('filters-category').should('have.length', 3);
 });
 ```
+</details>
+
 5. Select each category with an alias `.as('category-name')`
+<details>
+    <summary>
+    Solution
+    </summary>
+
 ```ts
 it('should show the correct filter options', () => {
     // ...
@@ -54,7 +87,14 @@ it('should show the correct filter options', () => {
     cy.getBySel('filters-category').eq(2).as('cuisine');
 });
 ```
+</details>
+
 6. Check for the correct options for each category through the `.each` command
+<details>
+    <summary>
+    Solution
+    </summary>
+
 ```ts
 it('should show the correct filter options', () => {
     // ...
@@ -143,3 +183,4 @@ it('should show the correct filter options', () => {
     });
 });
 ```
+</details>

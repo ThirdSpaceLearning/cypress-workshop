@@ -1,7 +1,6 @@
 ## Cypress common issues
 
----
-
-- When code changes
-- When `data-cy` changes
-- When the request is not intercepted correctly
+- Code changes
+- `data-cy` changes
+- Requests not intercepted correctly
+- Not waiting for responses before testings the code

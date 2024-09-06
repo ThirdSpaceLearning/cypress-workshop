@@ -1,7 +1,5 @@
 ## Cypress best practices
 
----
-
 ### Write readable and maintainable tests
 
 1. **Specs**: Use a spec for each app’s page to keep tests organised and easy to find.

@@ -1,6 +1,6 @@
 describe('Recipe Page', () => {
     beforeEach(() => {
-        cy.intercept('GET', '**/recipes/*', {
+        cy.intercept('GET', '**/recipes/1?*', {
             fixture: 'recipe.json',
         });
 

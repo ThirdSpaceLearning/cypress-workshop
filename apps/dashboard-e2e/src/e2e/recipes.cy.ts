@@ -65,7 +65,7 @@ describe('Recipes Page', () => {
 
     it('should redirect to the recipe', () => {
         // Intercept recipe request
-        cy.intercept('GET', '**/recipes/*', {
+        cy.intercept('GET', '**/recipes/1?*', {
             fixture: 'recipe.json',
         });
 
